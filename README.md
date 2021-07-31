@@ -1,2 +1,2 @@
 # SuaIdadade
-Veja aqui o projeto funcionando: idadereveladora.netlify.app
+Veja aqui o projeto funcionando:https://idadereveladora.netlify.app/
