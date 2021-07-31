@@ -1,0 +1,50 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Testes</title>
+        <style>
+            body {
+                margin: 0;
+                background-color: #85FFBD;
+                background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+                
+            }
+             
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <header>
+                <h1>Você é maior de Idade?</h1><span></span>
+            </header>
+            <main>
+                <input placeholder="digite aqui sua idade">
+                <p>Resultado: <span>?</span></p>
+            </main>
+            <button onclick="responderIdade()">Verificar</button>
+        </div>
+        <script>
+            function responderIdade() {
+                console.log("clicou em algum botao")
+                // pegar valor do input
+                const valor = parseInt(document.querySelector("input").value)
+                console.log(valor)
+
+                // let mensagem
+                // if (valor < 18){
+                //     // for menor
+                //     mensagem = "Voce eh menor de idade"
+                // } else {
+                //     // for maior
+                //     mensagem = "Voce eh grandao"
+                // }
+
+                let mensagem = valor < 18 ? "Voce eh menor de idade" : "Voce eh grandao"
+
+                document.querySelector("main p span").innerText = mensagem
+            }
+        </script>
+    </body>
